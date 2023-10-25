@@ -1,24 +1,342 @@
-.main{
-    display:flex;
-    flex-direction: column;
-}
-.section {
-    border: 5px rgb(163, 160, 160) solid;
-    padding-left: 2%;
-    height: 50vh;
-    width: auto;
-}
-.project-container{
-    display:grid;
-    grid-template-columns: auto auto auto;
-}
-.project {
-    text-align: center;
-    border: 5px rgb(163, 160, 160) solid;
-    border-radius: 20%;
+html {
+    scroll-behavior: smooth;
 }
 
-.project-image {
-    width: 33%;
-    height:auto;
+.container-even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    
 }
+.container-odd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #5f2c82, #49a09d);
+    gap: 10px;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.about {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 8px;
+    width: 80%;
+    max-width: 500px;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 10px;
+
+}
+
+
+.about h1 {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.about p {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 400;
+
+    
+}
+
+.about a {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.about :nth-child(2) {
+    animation-delay: 2s;
+}
+
+.about :nth-child(3) {
+    animation-delay: 3s;
+}
+
+.about :nth-child(4) {
+    animation-delay: 4s;
+}
+
+.about :nth-child(5) {
+    animation-delay: 5s;
+}
+
+.about :nth-child(6) {
+    animation-delay: 6s;
+}
+
+.about a {
+    text-decoration: none;
+    color: #5f2c82;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    border: 2px solid #5f2c82;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .project a:hover {
+    background-color: #005ea6;
+  }
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .project-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+  }
+
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes stretch {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 50%;
+    }
+}
+
+.about h1.animated,
+.about p.animated,
+.about a.animated {
+
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 8px;
+    width: 80%;
+    max-width: 500px;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 10px;
+}
+
+.contact h1 {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.contact p {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 400;
+
+    
+}
+
+.contact a {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact :nth-child(1) {
+    animation-delay: 1s;
+}
+
+.contact :nth-child(2) {
+    animation-delay: 2s;
+}
+
+.contact :nth-child(3) {
+    animation-delay: 3s;
+}
+
+.contact :nth-child(4) {
+    animation-delay: 4s;
+}
+
+.contact :nth-child(5) {
+    animation-delay: 5s;
+}
+
+.contact :nth-child(6) {
+    animation-delay: 6s;
+}
+
+.contact :nth-child(7) {
+    animation-delay: 7s;
+}
+
+
+.contact a {
+    text-decoration: none;
+    color: #5f2c82;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    flex-direction: column;
+
+}
+
+
+
+.contact-link a {
+    text-decoration: none;
+    color: #5f2c82;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+

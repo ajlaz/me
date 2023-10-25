@@ -2,84 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="UTF-8">
   <title>Aden Lazarus</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./index.js">
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/6a5f3f6e3a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Aden Lazarus</a></h1>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
+  <div class="container-even" id="about">
+    <div class="about">
+      <h1>Hi, I'm Aden</h1>
+      <p>I'm a fullstack developer and computer science student, passionate about building web applications that solve
+        real-world problems.</p>
+      <p>With experience in both front-end and back-end development, I enjoy working with a variety
+        of technologies and frameworks to create dynamic and responsive user interfaces.</p>
+      <p>When I'm not coding, I'm listening to music, in the gym, or out spending time with my friends.</p>
+      <p>Check out some of my work below.</p>
+      <a href="#projects">↓</a>
+    </div>`
+  </div>
+  <div class="container-odd" id="projects">
+    <div class="project-header">
+      <h1>Projects</h1>
     </div>
-  </header>
+    <div class="projects">
 
-  <div id="hero" class="hero route bg-image" style="background-image: url()">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4">Aden Lazarus</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Student, Full Stack Developer"></span></p>
-          <a href="https://github.com/ajlaz" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="./assets/resume.pdf" target="_blank"><i class="fa fa-file"></i></a>
+      <div class="project">
+        <h2>Go Chatroom</h2>
+        <p>Built a Go backend with web-sockets to communicate with a react frontend and display live chat between users.
+        </p>
+        <a href="https://github.com/ajlaz/go-chatroom" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+
+        <h2>BudgeIt</h2>
+        <p>BudgeIt is a simplified approach to budgeting containing only the necessary components: transaction tracking
+          and monthly goals.</p>
+        <a href="https://github.com/ajlaz/budgeit" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h2>BU Course Planner</h2>
+        <p>Allows users to input current courses and receive optimized suggestions to fulfill hub requirements.</p>
+        <a href="https://github.com/ajlaz/course-planner" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h2>OpenCV Live Facial Recognition</h2>
+        <p>Utilized a facial recognition cascade with OpenCV and webcam to draw a rectangle around the users face.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+    <div class="contact-link">
+      <p>Get in touch</p>
+      <a class="about" href="#contact">↓</a>
+    </div>
+  </div>
+  <div class="container-even" id="contact">
+    <div class="contact">
+      <h1>Contact Me</h1>
+      <div class="options">
+        <span>
+          <a href="mailto:adenlazarus@gmail.com"><i class="fa fa-envelope"></i></a>
+        </span>
+        <span>
           <a href="https://linkedin.com/in/adenlazarus" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </div>
+        </span>
+        <span>
+          <a href="https://github.com/ajlaz" target="_blank"><i class="fa fa-github"></i></a>
+        </span>
       </div>
     </div>
   </div>
-
-  <main id="main">
-
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
-</html>`
