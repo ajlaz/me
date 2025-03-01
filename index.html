@@ -3,81 +3,130 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aden Lazarus</title>
   <link rel="stylesheet" href="styles.css">
   <script src="./index.js">
   </script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
   </style>
-  <script src="https://kit.fontawesome.com/6a5f3f6e3a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-  <div class="container-even" id="about">
-    <div class="about">
-      <h1>Hi, I'm Aden</h1>
-      <p>I'm a fullstack developer and computer science student, passionate about building web applications that solve
-        real-world problems.</p>
-      <p>With experience in both front-end and back-end development, I enjoy working with a variety
-        of technologies and frameworks to create dynamic and responsive user interfaces.</p>
-      <p>When I'm not coding, I'm listening to music, in the gym, or out spending time with my friends.</p>
-      <p>Check out some of my work below.</p>
-      <a href="#projects">↓</a>
-    </div>`
-  </div>
-  <div class="container-odd" id="projects">
-    <div class="project-header">
-      <h1>Projects</h1>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">AL</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-    <div class="projects">
+  </nav>
 
-      <div class="project">
-        <h2>Go Chatroom</h2>
-        <p>Built a Go backend with web-sockets to communicate with a react frontend and display live chat between users.
-        </p>
-        <a href="https://github.com/ajlaz/go-chatroom" target="_blank">View Project</a>
+  <section id="about" class="section">
+    <div id="particles-js"></div>
+    <div class="about-content">
+      <div class="intro-text">
+        <h1>Hi, I'm <span class="highlight">Aden</span></h1>
+        <h2 class="subtitle">Fullstack Developer</h2>
+        <p>I'm a computer science student passionate about building web applications that solve real-world problems.</p>
+        <p>With experience in both front-end and back-end development, I enjoy working with a variety of technologies
+          and frameworks to create dynamic and responsive user interfaces.</p>
+        <p>When I'm not coding, I'm listening to music, in the gym, or out spending time with my friends.</p>
       </div>
-      <div class="project">
+      <div class="scroll-indicator">
+        <a href="#projects" class="scroll-link">
+          <span>View My Work</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <h2>BudgeIt</h2>
-        <p>BudgeIt is a simplified approach to budgeting containing only the necessary components: transaction tracking
-          and monthly goals.</p>
-        <a href="https://github.com/ajlaz/budgeit" target="_blank">View Project</a>
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <p>Some things I've built</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Go Chatroom</h3>
+          <p>Built a Go backend with web-sockets to communicate with a react frontend and display live chat between
+            users.</p>
+          <div class="project-links">
+            <a href="https://github.com/ajlaz/go-chatroom" target="_blank" class="btn">
+              <i class="fa-brands fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <h2>BU Course Planner</h2>
-        <p>Allows users to input current courses and receive optimized suggestions to fulfill hub requirements.</p>
-        <a href="https://github.com/ajlaz/course-planner" target="_blank">View Project</a>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>BudgeIt</h3>
+          <p>BudgeIt is a simplified approach to budgeting containing only the necessary components: transaction
+            tracking and monthly goals.</p>
+          <div class="project-links">
+            <a href="https://github.com/ajlaz/budgeit" target="_blank" class="btn">
+              <i class="fa-brands fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <h2>OpenCV Live Facial Recognition</h2>
-        <p>Utilized a facial recognition cascade with OpenCV and webcam to draw a rectangle around the users face.</p>
-        <a href="#" target="_blank">View Project</a>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>BU Course Planner</h3>
+          <p>Allows users to input current courses and receive optimized suggestions to fulfill hub requirements.</p>
+          <div class="project-links">
+            <a href="https://github.com/ajlaz/course-planner" target="_blank" class="btn">
+              <i class="fa-brands fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>OpenCV Live Facial Recognition</h3>
+          <p>Utilized a facial recognition cascade with OpenCV and webcam to draw a rectangle around the users face.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn">
+              <i class="fa-brands fa-github"></i> View Project
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="contact-link">
-      <p>Get in touch</p>
-      <a class="about" href="#contact">↓</a>
-    </div>
-  </div>
-  <div class="container-even" id="contact">
-    <div class="contact">
-      <h1>Contact Me</h1>
-      <div class="options">
-        <span>
-          <a href="mailto:adenlazarus@gmail.com"><i class="fa fa-envelope"></i></a>
-        </span>
-        <span>
-          <a href="https://linkedin.com/in/adenlazarus" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </span>
-        <span>
-          <a href="https://github.com/ajlaz" target="_blank"><i class="fa fa-github"></i></a>
-        </span>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="contact-content">
+      <h2>Get In Touch</h2>
+      <p>I'm always open to new opportunities and collaborations.</p>
+      <div class="social-links">
+        <a href="mailto:adenlazarus@gmail.com" class="social-btn">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/adenlazarus" target="_blank" class="social-btn">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/ajlaz" target="_blank" class="social-btn">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <script src="./index.js"></script>
 </body>
+
+</html>
